@@ -225,3 +225,124 @@
   .clear {
     clear: left;
   }
+
+
+
+  /* FOOTER */
+  footer {
+    border-top: 1px solid #eee;
+    padding: 20px;
+  }
+
+  footer ul {
+    list-style: none;
+  }
+
+  .layanan-footer ul li a,
+  .dukungan-footer ul li a {
+    color: #aaa;
+  }
+
+  .main-content-footer {
+    display: grid;
+    grid-template-areas: "logo layanan dukungan";
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .logo-footer img {
+    width: 150px;
+  }
+
+  .layanan-footer {
+    justify-self: center;
+    line-height: 40px;
+  }
+
+  .dukungan-footer {
+    justify-self: center;
+    line-height: 40px;
+  }
+
+  .socmed-footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    display: flex;
+  }
+
+  .socmed-footer p {
+    flex: 1;
+    color: #aaa;
+  }
+
+  .socmed-footer ul {
+    display: flex;
+  }
+
+  .socmed-footer ul li a {
+    margin-left: 20px;
+    font-size: x-large;
+    color: black;
+    transition: 0.4s;
+  }
+
+  .socmed-footer ul li:hover:nth-child(1) a {
+    color: #2d88ff;
+  }
+
+  .socmed-footer ul li:hover:nth-child(2) a {
+    color: #32ccfe;
+  }
+
+  .socmed-footer ul li:nth-child(3):hover a {
+    color: #d72118;
+  }
+
+  .socmed-footer ul li:nth-child(4):hover a {
+    color: #db475f;
+  }
+
+
+
+
+
+  /*Tablet*/
+  @media (max-width: 1000px){
+    .container2{
+      display: inline;
+    }
+    .left-half{
+      background-position: center;
+    }
+    .right-half{
+      display: none;
+    }
+  }
+
+  /*HP*/
+  @media (max-width: 670px){
+    .header-right {
+      display: none;
+    }
+    
+    .menu-icon {
+      display: block;
+      color: black;
+    }
+    
+    .container2{
+      display: inline;
+    }
+
+    .left-half{
+      background-size: cover;
+    }
+
+    .right-half{
+      display: none;
+    }
+    .lesson{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
