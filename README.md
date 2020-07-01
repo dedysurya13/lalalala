@@ -1,5 +1,5 @@
 # progate-ceb-f02
-Tim F02 CEB
+*Tim F02 CEB*
 
 Dedy Surya Prihantoro
 Muhammad Burhanuddin Firmansyah
