@@ -405,7 +405,14 @@ a {
     text-align: center;
     transition: 0.9s;
 	float: left;
-	border-radius: 20px;
+}
+
+.single-price-left{
+	border-radius: 20px 0px 0px 20px;
+}
+
+.single-price-right{
+	border-radius: 0px 20px 20px 0px;
 }
 
 .single-price h1 {
