@@ -272,7 +272,7 @@ header {
 	}
 }
 
-.lesson-wrapper {
+.whyus-wrapper {
 	padding-bottom: 80px;
 	padding-left: 5%;
 	padding-right: 5%;
@@ -280,23 +280,23 @@ header {
 	text-align: center;
 }
 
-.lesson {
+.whyus {
 	float: left;
 	width: 33%;
 }
 
-.lesson-icon {
+.whyus-icon {
 	position: relative;
 	margin: 0 auto;
 	padding: 10px;
 }
 
-.lesson-icon img {
+.whyus-icon img {
 	width: 200px;
 	height: 200px;
 }
 
-.lesson-icon p {
+.whyus-icon p {
 	position: absolute;
 	top: 44%;
 	width: 100%;
@@ -660,7 +660,7 @@ footer ul {
 	.right-half {
 		display: none;
 	}
-	.lesson {
+	.whyus {
 		width: 100%;
 		margin-bottom: 20px;
 	}
