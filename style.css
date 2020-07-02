@@ -34,6 +34,7 @@ a {
 	margin: 0 auto;
 }
 
+/* old nav
 .menu-icon {
 	color: white;
 	float: right;
@@ -42,9 +43,6 @@ a {
 	display: none;
 }
 
-.fa {
-	margin-right: 5px;
-}
 
 header {
 	height: 65px;
@@ -57,7 +55,7 @@ header {
 
 .logo {
 	width: 124px;
-	margin-top: 20px;
+	margin-left: 20px;
 }
 
 .header-left {
@@ -71,16 +69,81 @@ header {
 
 .header-right a {
 	line-height: 65px;
-	padding: 0 25px;
+	padding: 0 25px;transition: all 0.5s;
 	color: black;
 	display: block;
 	float: left;
-	transition: all 0.5s;
+	
 }
 
 .header-right a:hover {
 	background-color: rgba(0, 0, 0, 0.3);
 }
+*/
+
+.nav-wrapper{
+	width: 1170px;
+	height: 70px;
+	margin: 0 auto; 
+	width: 100% !important;
+	z-index: 10;
+	top: 0;
+	position: fixed;
+}
+
+.navbar {
+	font-size: 18px;
+	background-color:white;
+	padding: 7px 7px 0px 0px;
+	width: 100%;
+}
+
+.fa {
+	margin-right: 5px;
+}
+
+#main-nav {
+	list-style-type: none;
+	display: none;
+	flex-direction: column;
+}
+
+#main-nav li {
+	text-align: center;
+	margin: 15px auto;
+}
+
+.nav-links {
+	text-decoration: none;
+	transition: all 0.5s;
+	padding: 0 25px;
+	color: black;
+	display: block;
+	float: left;
+}
+
+
+
+.logo2 {
+	display: inline-block;
+	width: 124px;
+	margin-left: 20px;
+
+}
+
+#navbar-toggle {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	cursor: pointer;
+	color: black;
+	font-size: 24px;
+}
+
+#navbar-toggle:hover {
+	color: grey;
+}
+  
 
 .btn-wrapper {
 	text-align: center;
@@ -576,6 +639,7 @@ footer ul {
 
 /*HP*/
 @media (max-width: 670px) {
+/*	
 	.header-right {
 		display: none;
 	}
@@ -584,7 +648,7 @@ footer ul {
 		display: block;
 		color: black;
 	}
-
+*/
 	.container2 {
 		display: inline;
 	}
@@ -628,6 +692,15 @@ footer ul {
 		width: 80%;
 	}
 
+	.single-price-left{
+		border-radius: 20px;
+	}
+	
+	.single-price-right{
+		border-radius: 20px;
+	}
+	
+
 	/* FOOTER */
 	.main-content-footer {
 		display: flex;
@@ -660,3 +733,44 @@ footer ul {
 		margin: 0;
 	}
 }
+
+@media screen and (min-width: 670px) {
+  .navbar {
+	padding-top: 0px;
+	padding-left: 40px; 
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 0;
+	height: 70px;
+	align-items: center;
+  }
+
+  #main-nav {
+	  display: flex !important;
+	  margin-right: 30px;
+	  flex-direction: row;
+	  justify-content: flex-end;
+  }
+
+  #main-nav li {
+	  margin: 0;
+  }
+
+  .nav-links{
+	  line-height: 70px;
+  }
+
+  .nav-links:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  #logo2 {
+	  margin-top: 0;
+  }
+
+  #navbar-toggle {
+	  display: none;
+  }
+
+} 
