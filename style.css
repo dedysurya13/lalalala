@@ -145,8 +145,8 @@ header {
 .img-right {
 	width: 80%;
 	height: 80%;
-	-webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.5));
-	filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.5));
+	-webkit-filter: drop-shadow(3px 3px 8px rgba(0, 0, 0, 0.5));
+	filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.5));
 }
 
 .anim-left {
@@ -379,7 +379,99 @@ a {
 	letter-spacing: 0.02em !important;
 }
 
+/* PRICING */
+.pricing-container {
+    background-color: #fff;
+    text-align: center;
+    color: rgb(67, 72, 77);
+	font-weight: normal;
+	background-image: url(res/team-bg-left.png), url(res/team-bg-right.png);
+	background-position: bottom left, top right;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.pricing {
+    width: 700px;
+    margin: 5% auto;
+    display: table;
+}
+
+.single-price {
+    width: 50%;
+    background-color: #f8fafe;
+    margin-top: 2%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: 0.9s;
+	float: left;
+	border-radius: 20px;
+}
+
+.single-price h1 {
+    font-size: 18px;
+    color: rgb(3, 3, 3);
+    line-height: 3;
+    text-transform: uppercase;
+}
+
+.single-price:hover {
+    background-image: linear-gradient(to right, #f5eeff, #ebf3ff);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+    transform: scale(1.1);
+    z-index: 1;
+    border-radius: 25px;
+}
+
+.single-price:hover .price {
+    border-color: #fff;
+}
+
+.single-price a {
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px 60px;
+    display: inline-block;
+    margin: 10% auto;
+    text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.single-price:hover a {
+    background: #262626;
+    color: #fff;
+}
+
+.price {
+    width: 100%;
+    height: 100%;
+    margin: 10% auto 0 auto;
+    text-align: center;
+}
+
+.price h2 {
+	padding-top: 40px;
+    font-size: 38px;
+    color: rgb(26, 26, 26);
+}
+
+.price-content {
+    margin-top: 10%;
+}
+
+.price-content h4 {
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 1;
+}
+
+
 /* FOOTER */
+
 footer {
 	border-top: 1px solid #eee;
 	padding: 20px;
@@ -510,6 +602,23 @@ footer ul {
 	}
 	.testimoni_main {
 		margin-bottom: 20px;
+	}
+
+
+	.pricing{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+	.pricing-container{
+		margin: 0 auto;
+		justify-content: center;
+		align-items: center;
+	}
+	.single-price{
+		width: 80%;
 	}
 
 	/* FOOTER */
